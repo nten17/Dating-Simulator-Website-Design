@@ -1,0 +1,113 @@
+body{
+  font-family: 'Didact Gothic', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*===============
+TITLE SCREEN
+===============*/
+
+.title {
+  font-size: 60px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.subheading {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.title, .subheading {
+  margin: 0;
+
+}
+
+/*===============
+STORY
+===============*/
+
+p {
+  font-weight: 400;
+  font-size: 38px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  max-width: 800px;
+}
+
+@media only screen and (max-width: 600px){
+  p {
+    font-size: 24px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/*===============
+OPTIONS
+===============*/
+
+.options-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  max-width: 800px;
+}
+
+a {
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: #cd0b24;
+  line-height: 32px;
+}
+
+a:hover {
+  border-bottom: solid 2px #cd0b24;
+  padding-bottom: 3px;
+}
+
+
+.option{
+  max-width: 500px;
+  padding-left: 2em;
+  padding-right: 2em;
+
+}
+
+@media only screen and (max-width: 600px){
+  .option {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .options-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  a {
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: #cd0b24;
+    line-height: 28px;
+  }
+}
+
+/*===============
+BACKGROUNDS
+===============*/

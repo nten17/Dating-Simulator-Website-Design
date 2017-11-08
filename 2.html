@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- jQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+	jQuery('body').css('display','none');
+	jQuery(document).ready(function() {
+		jQuery('body').fadeIn();
+		jQuery('a').on('click',function(event){
+			var thetarget = this.getAttribute('target')
+			if (thetarget != "_blank"){
+				var thehref = this.getAttribute('href')
+				event.preventDefault();
+				jQuery('body').fadeOut(function(){
+					//alert(thehref)
+					window.location = thehref
+				});
+			}
+		});
+	});
+	setTimeout(function(){
+		jQuery('body').fadeIn();
+	},1000)
+</script>
+
+<!-- AUDIO -->
+
+  <audio autoplay>
+    <source src="" type="audio/mpeg">
+  </audio>
+
+<!-- TEXT -->
+  <div id="page-2" class="content-container">
+
+    <p class="">It is a Friday evening in November. You have successfully navigated the rough world of online dating and landed yourself a date to get drinks with a cutie. You are hoping to make a good first impression. You check the time and you notice you are going to be late!</p>
+
+    <div class="options-container">
+
+      <div class="option">
+        <a class="" href="3a.html">Text your date and tell them you will be late.</a>
+      </div>
+
+      <img src="assets/divider.svg" alt="option divider">
+
+      <div class="option">
+        <a class="" href="3b.html">Hope they are also late and try and pick up the pace.</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

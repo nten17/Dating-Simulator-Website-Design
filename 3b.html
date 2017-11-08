@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- jQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+	jQuery('body').css('display','none');
+	jQuery(document).ready(function() {
+		jQuery('body').fadeIn();
+		jQuery('a').on('click',function(event){
+			var thetarget = this.getAttribute('target')
+			if (thetarget != "_blank"){
+				var thehref = this.getAttribute('href')
+				event.preventDefault();
+				jQuery('body').fadeOut(function(){
+					//alert(thehref)
+					window.location = thehref
+				});
+			}
+		});
+	});
+	setTimeout(function(){
+		jQuery('body').fadeIn();
+	},1000)
+</script>
+
+<!-- AUDIO -->
+
+  <audio autoplay>
+    <source src="" type="audio/mpeg">
+  </audio>
+
+<!-- TEXT -->
+  <div id="page-3b" class="content-container">
+
+    <p class="">A fast walk turns into a light jog and you are moving through the streets. Why did you have to gargle so much mouth wash beforehand? You regret the extensive oral hygiene and press onward.</p>
+
+    <div class="options-container">
+
+      <div class="option">
+        <a class="" href="4c.html">You regret the extensive oral hygiene and press onward.</a>
+      </div>
+
+      <!-- <img src="assets/divider.svg" alt="option divider">
+
+      <div class="option">
+        <a class="" href="2b.html">Hope they are also late and try and pick up the pace.</a>
+      </div> -->
+
+    </div>
+  </div>
+
+</body>
+</html>
