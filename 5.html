@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- jQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+	jQuery('body').css('display','none');
+	jQuery(document).ready(function() {
+		jQuery('body').fadeIn();
+		jQuery('a').on('click',function(event){
+			var thetarget = this.getAttribute('target')
+			if (thetarget != "_blank"){
+				var thehref = this.getAttribute('href')
+				event.preventDefault();
+				jQuery('body').fadeOut(function(){
+					//alert(thehref)
+					window.location = thehref
+				});
+			}
+		});
+	});
+	setTimeout(function(){
+		jQuery('body').fadeIn();
+	},1000)
+</script>
+
+<!-- AUDIO -->
+
+  <audio autoplay>
+    <source src="sounds/chair-drag-in-bar.wav" type="audio/mpeg">
+  </audio>
+
+
+<!-- TEXT -->
+  <div id="page-5" class="content-container">
+
+    <p class="">You smile and introduce yourself in the flesh for the first time. They do the same while standing up from their seat.</p>
+
+    <div class="options-container">
+
+      <div class="option">
+        <a class="" href="6a.html">Hug them.</a>
+      </div>
+
+      <img src="assets/divider.svg" alt="option divider">
+
+      <div class="option">
+        <a class="" href="6b.html">Give them a firm handshake.</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- jQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+	jQuery('body').css('display','none');
+	jQuery(document).ready(function() {
+		jQuery('body').fadeIn();
+		jQuery('a').on('click',function(event){
+			var thetarget = this.getAttribute('target')
+			if (thetarget != "_blank"){
+				var thehref = this.getAttribute('href')
+				event.preventDefault();
+				jQuery('body').fadeOut(function(){
+					//alert(thehref)
+					window.location = thehref
+				});
+			}
+		});
+	});
+	setTimeout(function(){
+		jQuery('body').fadeIn();
+	},1000)
+</script>
+
+<!-- AUDIO -->
+
+  <audio autoplay>
+    <source src="sounds/handshake-in-bar.wav" type="audio/mpeg">
+  </audio>
+
+
+<!-- TEXT -->
+  <div id="page-6b" class="content-container">
+
+    <p class="">You offer your hand to them in a very formal-looking handshake. They extend their own hand and you smile and let out a nervous laugh to try and makeup for the awkward formality.</p>
+
+    <div class="options-container">
+
+      <div class="option">
+        <a class="" href="7.html">They don’t seem to mind.</a>
+      </div>
+
+      <!-- <img src="assets/divider.svg" alt="option divider">
+
+      <div class="option">
+        <a class="" href="6b.html">Give them a firm handshake.</a>
+      </div> -->
+
+    </div>
+  </div>
+
+</body>
+</html>
