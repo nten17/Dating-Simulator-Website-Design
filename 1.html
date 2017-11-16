@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dating Simulator: For the Lonely and Desperate</title>
+<link rel="stylesheet" href="/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- jQuery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+	jQuery('body').css('display','none');
+	jQuery(document).ready(function() {
+		jQuery('body').fadeIn();
+		jQuery('a').on('click',function(event){
+			var thetarget = this.getAttribute('target')
+			if (thetarget != "_blank"){
+				var thehref = this.getAttribute('href')
+				event.preventDefault();
+				jQuery('body').fadeOut(function(){
+					//alert(thehref)
+					window.location = thehref
+				});
+			}
+		});
+	});
+	setTimeout(function(){
+		jQuery('body').fadeIn();
+	},1000)
+</script>
+
+<!-- AUDIO -->
+
+  <audio autoplay>
+    <source src="" type="audio/mpeg">
+  </audio>
+
+<!-- TEXT -->
+  <div class="content-container">
+    <p class="title">Dating Simulator</p>
+    <p class="subheading">For the lonely and desparate</p>
+
+    <!-- <p class="story"></p> -->
+
+    <div class="options-container">
+      <a class="option-1" href="2.html">You got the date! Let's go!</a>
+      <!-- <a class="option-2" href="2b.html">rush</a> -->
+    </div>
+  </div>
+
+</body>
+</html>
