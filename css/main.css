@@ -11,7 +11,7 @@ body{
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color: #fcd9d9
+  background-color: #fcd9d9;
 }
 
 video {
@@ -124,3 +124,16 @@ a:hover {
 /*===============
 BACKGROUNDS
 ===============*/
+
+
+#page-2, #page-10a, #page-11b, #page-12, #page-15, #page-3b, #page-4c, #page-6b, #page-10c {
+  background: hsla(0, 80%, 80%, 1)
+}
+
+#page-13, #page-14a, #page-11c {
+  background: hsla(0, 80%, 70%, 1)
+}
+
+#page-16a, #page-16b {
+  background: white;
+}
